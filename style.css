@@ -1,0 +1,158 @@
+/* Everything */
+html{box-sizing: border-box;
+background-color: rgb(19, 24, 32);}
+
+body {color: rgb(229, 229, 229);
+    margin: 0;}
+
+header {background-color: rgb(57, 160, 219);
+display:flex;
+justify-content: space-between;}
+
+nav {width: 360px;}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    font-size: 21px;
+    font-weight: 400;
+    margin-top: 18px;
+}
+
+nav ul a {text-decoration: none;
+    color: rgb(229, 229, 229);}
+
+nav ul a:hover {transition-duration: 0.5s;
+    color: orange;
+    cursor: pointer;
+    font-size: 23px;}
+
+#logo {padding-left: 30px;}
+
+
+/* Home Page */
+#intro {display: flex;
+justify-content: center;
+margin-top: 38px;}
+
+#left-info {width: 40%;
+            padding-right: 90px;
+        display: flex;
+        flex-direction: column;}
+
+h1 {font-size: 50px;
+    margin-bottom: 3px;
+    text-align: center;}
+
+#intro-p {font-size:20px;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 150%;}
+
+button {
+    width: 350px;
+    padding: 5px 0;
+    align-self: center;
+    background-color: #0092D5;
+    border:  none;
+    border-radius: 10px;
+    font-size: 33px;
+    color: white;
+    letter-spacing: 2px;
+    cursor: pointer;
+    box-shadow: 0px 6px 44px 0px rgb(92, 92, 92);
+    margin-top: 25px;
+}
+
+button:hover {
+    transition: 0.4s;
+    background-color: orange;
+    font-size: 37px;
+}
+
+#buyLink {text-decoration: none;
+        text-align: center;}
+
+#video {width: 40%;
+    min-width: 500px;
+margin-top: 33.5px;}
+
+video {width: 100%;}
+
+#performance-heading {font-size: 70px;
+margin-top: 150px;}
+
+#performance-image {display: flex;
+justify-content: center;
+margin-top: 20px;}
+
+#stats {display: flex;
+justify-content: space-around;
+margin-top: 10px;
+width: 75%;
+margin: auto;}
+
+.statText {
+    font-size: 30px;
+    text-align: center;
+}
+
+.borderbot {border-bottom: solid 1px white;
+            padding-bottom: 5px;
+            margin-bottom: 3px;}
+
+.data {margin-top: 3px;}
+
+#curveImg {border: solid orange 3px;}
+
+/* Discord */
+#discHead {margin-top: 50px;}
+
+#discord {margin-top: 100px;
+display: flex;
+justify-content: center;}
+
+.discInfo{font-size: 25px;
+padding-bottom: 40px;
+padding-right: 40px;}
+
+#discImg {height: 280px;
+        padding-left: 40px;}
+
+#discButton {margin:auto;
+            display: block;
+            margin-top: 100px;}
+
+#discLink {text-decoration: none;}
+
+/* About */
+
+#about {display: flex;
+        justify-content: center;
+        margin-top: 60px;}
+
+#aboutSection { display: flex;
+                flex-direction: column;
+                justify-content: center;}
+
+#silasDiv {text-align: center;
+          margin-top: 15px;
+          background-color: rgba(0, 0, 0, 0.2)}
+#Silas {
+    width: 200px;
+    margin-top: 16px;
+}
+
+#aboutText {
+            width: 700px;
+            font-size: 20px;
+            text-align: center;
+            letter-spacing: 0.5px;
+            line-height: 180%;
+            font-weight: 500;
+            background-color: rgba(0, 0, 0, 0.2);
+            padding-left: 26px;
+            padding-right: 26px;}
+
+#email {color: orange;}
