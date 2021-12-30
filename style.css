@@ -252,4 +252,11 @@ padding-right: 40px;}
                         font-size: 180%;}
 
     .statText {font-size: 100%;}
+
+    nav ul a {font-size: 70%;}
+
+    nav ul a:hover {font-size: 73%;}
+
+    #limitlessh2 {font-size: 120%;}
 }
+
