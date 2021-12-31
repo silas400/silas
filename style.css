@@ -45,25 +45,27 @@ width: 100%;}
             padding-right: 90px;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
         }
 
-h1 {font-size: 50px;
+h1 {font-size: 300%;
     margin-bottom: 3px;
-    text-align: center;}
+    margin-left: auto;
+    margin-right: auto;}
 
 #intro-p {font-size:160%;
-    text-align: center;
     letter-spacing: 1px;
     line-height: 150%;
     padding-left: 12%;
     padding-right: 12%}
 
 button {
-    width: 300px;
+    font-size: 70%;
     padding: 5px 0;
-    padding-left: 5%;
-    padding-right: 5%;
-    align-self: center;
+    padding-left: 7%;
+    padding-right: 7%;
     background-color: #0092D5;
     border:  none;
     border-radius: 10px;
@@ -78,14 +80,11 @@ button {
 button:hover {
     transition: 0.4s;
     background-color: orange;
-    font-size: 37px;
+    font-size: 200%;
 }
 
 #buyLink {text-decoration: none;
-        text-align: center;
-        width:fit-content;
-    margin-left: auto;
-    margin-right: auto;}
+        color: white;}
 
 #video {width: 45%;
        margin-top: 33.5px;
@@ -96,7 +95,8 @@ video {width: 100%;
 object-fit: fill;}
 
 #performance-heading {font-size: 500%;
-margin-top: 150px;}
+margin-top: 150px;
+text-align: center;}
 
 #performance-image {display: flex;
 justify-content: center;
@@ -179,24 +179,42 @@ padding-right: 40px;}
 #email {color: orange;}
 
 
-
 @media only screen and (min-width: 1920px) {
-  video {height: 500px;}
-  #intro-p {font-size: 200%;}
-  nav ul a {font-size: 140%;}
-
-  nav ul a:hover {font-size: 145%;}
-
-  #performance-heading {font-size: 600%;}
-  }
-
+    video {height: 500px;}
+    #intro-p {font-size: 200%;}
+    nav ul a {font-size: 140%;}
   
+    nav ul a:hover {font-size: 145%;}
+  
+    #performance-heading {font-size: 600%;}
 
-  @media only screen and (min-width: 2200px) {
-    video {height: 600px;}
+    #lvlup {font-size: 370%;}
+    }
 
-    #intro-p {font-size: 260%;}
+
+@media only screen and (min-width: 2200px) {
+    #video {width: 40%}
+    video {height: 600px}
+
+    #intro-p {font-size: 260%}
 }
+
+@media only screen and (min-width: 2500px) {
+    nav {width:20%}
+    #video {width: 35%}
+    .statText {font-size: 260%;}
+}
+
+
+@media only screen and (max-width: 1440px) {
+    nav {width: 40%;}
+    }
+
+    @media only screen and (max-width: 1280px) {
+        #lvlup {font-size: 180%;}
+        #intro-p {font-size: 140%;}
+        }
+
 
 @media only screen and (max-width: 1000px) {
     #intro {flex-direction:column;
@@ -249,7 +267,7 @@ padding-right: 40px;}
     nav {width: 70%;}
 
     #performance-heading {margin-top: 50px;
-                        font-size: 180%;}
+                        font-size: 120%;}
 
     .statText {font-size: 100%;}
 
