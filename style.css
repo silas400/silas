@@ -11,25 +11,24 @@ display:flex;
 justify-content: space-between;
 height: 5%;}
 
-nav {width: 25%;}
+nav {width: clamp(18px, 38vw, 500px);}
 
 nav ul {
     display: flex;
     list-style-type: none;
     justify-content: space-around;
-    font-size: 140%;
     font-weight: 400;
     margin-top: 18px;
 }
 
 nav ul a {text-decoration: none;
     color: rgb(229, 229, 229);
-    font-size: 100%;}
+    font-size: clamp(22px, 1.2vw, 33.9px);}
 
 nav ul a:hover {transition-duration: 0.5s;
     color: orange;
     cursor: pointer;
-    font-size: 105%;}
+    font-size: clamp(22px, 1.5vw, 33.9px);}
 
 #logo {padding-left: 30px;}
 
@@ -41,7 +40,7 @@ justify-content: center;
 margin-top: 38px;
 width: 100%;}
 
-#left-info {width: 40%;
+#left-info {width: 35%;
             padding-right: 90px;
         display: flex;
         flex-direction: column;
@@ -50,26 +49,25 @@ width: 100%;}
         text-align: center;
         }
 
-h1 {font-size: 300%;
+h1 {font-size: clamp(20px, 3.0vw, 800px);
     margin-bottom: 3px;
     margin-left: auto;
     margin-right: auto;}
 
-#intro-p {font-size:160%;
+#intro-p {font-size: clamp(15px, 1.2vw, 80px);
     letter-spacing: 1px;
     line-height: 150%;
     padding-left: 12%;
     padding-right: 12%}
 
 button {
-    font-size: 70%;
+    font-size: 1.4vw;
     padding: 5px 0;
     padding-left: 7%;
     padding-right: 7%;
     background-color: #0092D5;
     border:  none;
     border-radius: 10px;
-    font-size: 180%;
     color: white;
     letter-spacing: 2px;
     cursor: pointer;
@@ -86,15 +84,15 @@ button:hover {
 #buyLink {text-decoration: none;
         color: white;}
 
-#video {width: 45%;
+#video {width: 35%;
        margin-top: 33.5px;
         margin-right: 5%;}
 
 video {width: 100%;
-    height: 400px;
+    height: auto;
 object-fit: fill;}
 
-#performance-heading {font-size: 500%;
+#performance-heading {font-size: 3.5vw;
 margin-top: 150px;
 text-align: center;}
 
@@ -103,19 +101,19 @@ justify-content: center;
 margin-top: 20px;
 opacity: 0;}
 
-#curveImg {width: 65%;}
+#curveImg {width: 50vw;}
 
 #stats {display: flex;
 justify-content: space-around;
 margin-top: 10px;
-width: 75%;
+width: 50vw;
 margin: auto;
 margin-bottom: 60px;}
 
 #trades, #winRate, #Profit {opacity:0}
 
 .statText {
-    font-size: 200%;
+    font-size: 1.4vw;
     text-align: center;
 }
 
@@ -128,7 +126,8 @@ margin-bottom: 60px;}
 #curveImg {border: solid orange 3px;}
 
 /* Discord */
-#discHead {margin-top: 50px;}
+#discHead {margin-top: 50px;
+        text-align: center;}
 
 #discord {margin-top: 100px;
 display: flex;
@@ -178,103 +177,58 @@ padding-right: 40px;}
 
 #email {color: orange;}
 
-
-@media only screen and (min-width: 1920px) {
-    video {height: 500px;}
-    #intro-p {font-size: 200%;}
-    nav ul a {font-size: 140%;}
-  
-    nav ul a:hover {font-size: 145%;}
-  
-    #performance-heading {font-size: 600%;}
-
-    #lvlup {font-size: 370%;}
-    }
-
-
 @media only screen and (min-width: 2200px) {
-    #video {width: 40%}
-    video {height: 600px}
+    nav {width: clamp(18px, 38vw, 650px);}
+  }
 
-    #intro-p {font-size: 260%}
-}
+  @media only screen and (max-width: 1000px) {
+    nav {width: clamp(18px, 60vw, 650px);}
+  }
 
-@media only screen and (min-width: 2500px) {
-    nav {width:20%}
-    #video {width: 35%}
-    .statText {font-size: 260%;}
-}
+  @media only screen and (max-width: 900px) {
+    #intro {display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 38px;
+        width: 100%;}
 
+    #left-info {padding-right:0;
+                width: 60%;}
 
-@media only screen and (max-width: 1440px) {
-    nav {width: 40%;}
+    #video{width: 60%;
+            margin-right: 0;}
+     #performance-heading{margin-top: 35px;
+                        font-size: 4.3vw;}
+
+     .statText{font-size: 2.2vw;}
+
+     #stats {width: 70vw;}
+
+     #curveImg {width: 60vw;}
+
+     #intro-p {font-size: clamp(9px, 1.2vw, 80px);}
+
+     h1{font-size: clamp(15px, 3.0vw, 800px);}
+
+    
+    nav ul a { font-size: clamp(18px, 1.2vw, 33.9px);}
+    button {font-size: clamp(11.15px,2.5vw, 200px);}
     }
 
-    @media only screen and (max-width: 1280px) {
-        #lvlup {font-size: 180%;}
-        #intro-p {font-size: 140%;}
-        }
 
-
-@media only screen and (max-width: 1000px) {
-    #intro {flex-direction:column;
-            justify-content: center;
-            width: 100%;
-            margin-left: auto;
-            margin-right:auto;}
-
-    #left-info {width: 100%;
-                padding-right: 0;
-                font-size: 80%;}
-    
-    #video {width: 100%;
-            margin-right: 0;
-            display: flex;
-            justify-content: center;}
+    @media only screen and (max-width: 600px) {
+        nav {width: 60vw;}
+        nav ul a {font-size: 14px;}
+        nav ul {margin-bottom: 0;
+                margin-top: 0;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;}
             
-    video {width: 75%;
-          height: 10%;}
+    }
 
-    nav {width: 70%;}
-
-    #performance-heading {margin-top: 50px;
-                        font-size: 250%;}
-
-    .statText {font-size: 150%;}
-}
-
-@media only screen and (max-width: 600px) {
-    #intro {flex-direction:column;
-            justify-content: center;
-            width: 100%;
-            margin-left: auto;
-            margin-right:auto;}
-
-    #left-info {width: 100%;
-                padding-right: 0;
-                font-size: 50%;}
-
-    #lvlup {font-size: 300%;}
-    
-    #video {width: 100%;
-            margin-right: 0;
-            display: flex;
-            justify-content: center;}
-            
-    video {width: 75%;
-          height: 10%;}
-
-    nav {width: 70%;}
-
-    #performance-heading {margin-top: 50px;
-                        font-size: 120%;}
-
-    .statText {font-size: 100%;}
-
-    nav ul a {font-size: 70%;}
-
-    nav ul a:hover {font-size: 73%;}
-
-    #limitlessh2 {font-size: 120%;}
-}
 
